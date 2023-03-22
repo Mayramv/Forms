@@ -1,28 +1,20 @@
-* {
-  font-family: "Fira Sans", sans-serif;
-  font-family: "Space Mono", monospace;
-}
-body {
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(90deg, #f5d4a9 0%, rgb(241, 74, 8) 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.conteine {
+.main {
   background-color: #faf0f0;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   width: 400px;
   max-width: 100%;
+
   overflow: hidden;
 }
-.header {
+.formulario {
   background-color: orangered;
   padding: 15px;
   font-size: 24px;
   text-align: center;
+  color: black;
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: #f7decf;
 }
 .form {
   padding: 10px;
@@ -64,6 +56,7 @@ form button {
   border-radius: 10px;
   width: 50%;
   margin-left: 25%;
+  cursor: pointer;
 }
 /* error and success*/
 

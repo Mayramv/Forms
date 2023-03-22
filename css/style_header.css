@@ -1,0 +1,18 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Space Mono", monospace;
+}
+body {
+  width: 100%;
+  background: linear-gradient(90deg, #f5d4a9 0%, rgb(241, 74, 8) 100%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 60px;
+}

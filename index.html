@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_header.css" />
+    <link rel="stylesheet" href="css/style_main.css" />
+    <link rel="stylesheet" href="css/style_footer.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,67 +17,78 @@
     <title>Forms</title>
   </head>
   <body>
-    <div class="conteine">
-      <div class="header">
-        <h2>Criar uma Conta</h2>
+    <header></header>
+    <main>
+      <div class="main">
+        <div class="formulario">
+          <h2>Criar uma Conta</h2>
+        </div>
+        <form action="" id="form" class="form">
+          <div class="form-control">
+            <label for="username">Nome do Usuario</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Digite seu nome de usuario"
+            />
+            <i
+              class="fa-solid fa-triangle-exclamation"
+              style="color: #fa1900"
+            ></i>
+            <i class="fa-solid fa-square-check" style="color: #57fa00"></i>
+            <small> Mensagem de erro</small>
+          </div>
+
+          <div class="form-control">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" placeholder="Digite seu e-mail" />
+            <i
+              class="fa-solid fa-triangle-exclamation"
+              style="color: #fa1900"
+            ></i>
+            <i class="fa-solid fa-square-check" style="color: #57fa00"></i>
+            <small> Mensagem de erro</small>
+          </div>
+
+          <div class="form-control">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Digite sua senha"
+            />
+            <i
+              class="fa-solid fa-triangle-exclamation"
+              style="color: #fa1900"
+            ></i>
+            <i class="fa-solid fa-square-check" style="color: #57fa00"></i>
+            <small> Mensagem de erro</small>
+          </div>
+          <div class="form-control">
+            <label for="password-confirmation">Confirmação de Senha</label>
+            <input
+              type="password"
+              id="password-confirmation"
+              placeholder="Confirme sua senha"
+            />
+            <i
+              class="fa-solid fa-triangle-exclamation"
+              style="color: #fa1900"
+            ></i>
+            <i class="fa-solid fa-square-check" style="color: #57fa00"></i>
+            <small> Mensagem de erro</small>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
       </div>
-      <form action="" id="form" class="form">
-        <div class="form-control error">
-          <label for="username">Nome do Usuario</label>
-          <input
-            type="text"
-            id="username"
-            placeholder="Digite seu nome de usuario"
-          />
-          <i
-            class="fa-solid fa-triangle-exclamation"
-            style="color: #fa1900"
-          ></i>
-          <i class="fa-solid fa-square-check" style="color: #57fa00"></i>
-          <small> Mensagem de erro</small>
-        </div>
-
-        <div class="form-control error">
-          <label for="email">E-mail</label>
-          <input type="text" id="email" placeholder="Digite seu e-mail" />
-          <i
-            class="fa-solid fa-triangle-exclamation"
-            style="color: #fa1900"
-          ></i>
-          <i class="fa-solid fa-square-check" style="color: #57fa00"></i>
-          <small> Mensagem de erro</small>
-        </div>
-
-        <div class="form-control success">
-          <label for="password">Senha</label>
-          <input type="text" id="password" placeholder="Digite sua senha" />
-          <i
-            class="fa-solid fa-triangle-exclamation"
-            style="color: #fa1900"
-          ></i>
-          <i class="fa-solid fa-square-check" style="color: #57fa00"></i>
-          <small> Mensagem de erro</small>
-        </div>
-        <div class="form-control">
-          <label for="password-confirmation">Confirmação de Senhar</label>
-          <input
-            type="text"
-            id="password-confirmation"
-            placeholder="Confirme sua senha"
-          />
-          <i
-            class="fa-solid fa-triangle-exclamation"
-            style="color: #fa1900"
-          ></i>
-          <i class="fa-solid fa-square-check" style="color: #57fa00"></i>
-          <small> Mensagem de erro</small>
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+    </main>
+    <footer>
+      <p class="attribution">Code by: Mayra Malaquias.</p>
+    </footer>
     <script
       src="https://kit.fontawesome.com/3125181164.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
