@@ -28,15 +28,15 @@ function valida() {
   }
 
   if (passwordValue == "") {
-    setErroFor(password, "O senha é obrigatorio");
+    setErroFor(password, "A senha é obrigatorio");
   } else if (passwordValue.length < 7) {
-    setErroFor(password, "O senha precisa ter no minimo 7 caracteres.");
+    setErroFor(password, "A senha precisa ter no minimo 7 caracteres.");
   } else {
     setSuccessFor(password);
   }
 
   if (passwordConfirmationValue == "") {
-    setErroFor(passwordConfirmation, "O confirmação da senha é obrigatoria");
+    setErroFor(passwordConfirmation, "A confirmação da senha é obrigatoria");
   } else if (passwordConfirmationValue != passwordValue) {
     setErroFor(passwordConfirmation, "A senha não confere");
   } else {
