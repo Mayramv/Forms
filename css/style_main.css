@@ -80,3 +80,14 @@ form button {
   font-size: 12px;
   color: red;
 }
+.aviso {
+  font-size: 10px;
+  padding-left: 1em;
+  color: orangered;
+}
+.form-control.success span.aviso {
+  display: none;
+}
+.form-control.error span.aviso {
+  display: none;
+}
